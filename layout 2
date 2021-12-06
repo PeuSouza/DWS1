@@ -1,0 +1,71 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+
+body{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    max-width: 1024px;
+    align-items: center;
+    justify-content: center;
+}
+header{
+   background-color: #ffec99;
+   font-weight: bold;
+   height:7vh;
+   grid-area: header; 
+   border: 3px solid  #f08c00;
+}
+.main-nav{
+    background-color: #ffec99;
+    grid-area: main-nave;
+    border: 3px solid  #f08c00;
+}
+.content{
+    background-color: #ffec99;
+    grid-area: content;
+    border: 3px solid  #f08c00;
+}
+.side{
+     background-color: #ffec99;
+     font-weight: bold;
+     grid-area: side;
+     border: 3px solid  #f08c00;
+}
+.ad{
+     background-color: #ffec99;
+     font-weight: bold;
+     grid-area:ad;
+     border: 3px solid  #f08c00;
+}
+    
+.main-footer{
+    background-color: #ffec99;
+    grid-area: main-footer;
+    border: 3px solid  #f08c00;
+}
+.wrapper{
+  
+    justify-content: center;
+    display:grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 9vh 65vh 65vh 4vh;
+    grid-template-areas: "header  header header "
+                         "main-nave   content  side "  
+                         "main-nave  content ad "
+                         "main-footer  main-footer main-footer "
+    
+}
+@media(max-width 600px){
+    .wrapper{
+        display:flex;
+        flex-direction: column;
+        grid-template-areas: 
+    }
+    }
+    
+}
